@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 5%;
+    font: 1em/1.5 Georgia, serif;
+    overflow-y: scroll;
+}
+
+ul {
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    list-style: none;
+    margin-left: 0;
+}
+
+.nav>li,
+.nav>li>a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.stacked>li {
+    display: list-item;
+}
+
+.stacked>li>a {
+    display: block;
+}
+
+.flyout,
+.flyout-alt {
+    position: relative;
+}
+
+.flyout-content {
+    position: absolute;
+    top: 100%;
+    left: -99999px;
+    height: 0;
+    overflow: hidden;
+}
+
+.flyout:hover>.flyout-content {
+    left: 0;
+}
+
+.flyout-alt:hover>.flyout-content {
+    top: 0;
+    left: 100%;
+}
+
+.flyout:hover>.flyout-content,
+.flyout-alt:hover>.flyout-content {
+    height: auto;
+    overflow: visible;
+}
+
+.site-nav {
+    font-size: 0.75em;
+    font-family: sans-serif;
+}
+
+.site-nav a {
+    line-height: 1;
+    padding: 1em;
+    background-color: #09f;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.site-nav a.selected {
+    background-color: yellow;
+    color: black;
+}
+
+.site-nav .flyout:hover>a,
+.site-nav .flyout-alt:hover>a,
+.site-nav a:hover {
+    color: #435704;
+    background-color: #BADA55;
+}
+
+.site-nav .flyout-alt>a:after {
+    content: " »";
+}
+
+.site-nav a,
+.site-nav .flyout-content {
+    border: 0 solid #fff;
+}
+
+.site-nav>li>a {
+    border-left-width: 1px;
+}
+
+.site-nav>li:first-child>a {
+    border: none;
+}
+
+.site-nav .flyout-content {
+    border-width: 1px 0 0 1px;
+}
+
+.site-nav .flyout-content a {
+    border-bottom-width: 1px;
+}
+
+.site-nav .flyout-alt:hover>.flyout-content {
+    top: -1px;
+}
+
+.options ul,
+button {
+    display: inline-block;
+}
+
+input {
+    display: none;
+}
